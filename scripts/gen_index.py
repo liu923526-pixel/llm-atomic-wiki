@@ -12,17 +12,19 @@ from pathlib import Path
 # Optional predefined branch display mapping:
 # e.g. {"2330": "台積電 (2330)", "cpo": "CPO 共同封裝光學", "cowos": "CoWoS 先進封裝"}
 BRANCH_DISPLAY_MAP = {
-    "harness-engineering": "Harness Engineering",
-    "mcp": "MCP",
-    "ai-skills": "AI Skills",
-    "vibe-coding": "Vibe Coding",
-    "ai-agent": "AI Agent",
-    "self-media": "Self-Media",
-    "product-business": "Product & Business",
-    "claude-code": "Claude Code",
-    "context-engineering": "Context Engineering",
-    "career-mindset": "Career & Mindset",
-    "developer-workflow": "Developer Workflow",
+    # 個股分支
+    "stocks-2330": "台積電 (2330 TSMC)",
+    "stocks-3260": "威剛 (3260 ADATA)",
+    "stocks-2308": "台達電 (2308 Delta)",
+    "stocks-8069": "元太 (8069 E-Ink)",
+    "stocks-watchlist": "觀察股與獵犬清單 (Watchlist)",
+    # 產業主線分支
+    "theme-cowos": "CoWoS 先進封裝",
+    "theme-cpo": "CPO 共同封裝光學 / 矽光子",
+    "theme-memory": "記憶體與半導體循環 (DRAM / NAND / HBM)",
+    "theme-cooling": "AI 伺服器散熱 (水冷 / 液冷 / CDU)",
+    "theme-asic": "ASIC 與客製晶片 / IP",
+    "macro-energy": "總經與能源防守線 (原油 / 通膨)",
 }
 
 def get_display_name(branch_prefix: str) -> str:
